@@ -76,6 +76,6 @@ FORWARD_MESSAGE = is_enabled(
 )  # true if forwardd message to converted by reposting the post
 
 
-WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "True"), True)
-PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "240"))
-PORT = int(os.environ.get("PORT", "7488"))
+WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "0"), True)
+PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "1200"))
+PORT = int(os.environ.get("PORT", "8044"))
